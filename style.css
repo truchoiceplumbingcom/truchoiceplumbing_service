@@ -26,31 +26,6 @@ img{
 }
 
 /*==============================
-        LOADER
-==============================*/
-
-#loader{
-    position:fixed;
-    inset:0;
-    background:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:99999;
-}
-
-#loader img{
-    width:120px;
-    animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-    0%{transform:scale(.95);}
-    50%{transform:scale(1.08);}
-    100%{transform:scale(.95);}
-}
-
-/*==============================
       EMERGENCY BAR
 ==============================*/
 
