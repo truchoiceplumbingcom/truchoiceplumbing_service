@@ -75,7 +75,8 @@ opacity:0;
 
 header{
     position:fixed;
-    top:95px;
+    top:0;
+    left:0;
     width:100%;
     z-index:998;
 }
@@ -94,7 +95,7 @@ nav{
 }
 
 .logo img{
-    height:45px;
+    height:65px;
     width:auto;
 }
 
@@ -147,6 +148,7 @@ nav{
     justify-content:center;
     align-items:center;
     overflow:hidden;
+    padding-top:90px;
 }
 
 .hero-image{
