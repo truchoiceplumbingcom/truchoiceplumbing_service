@@ -89,7 +89,7 @@ img{
 
 header{
     position:fixed;
-    top:55px;
+    top:95px;
     width:100%;
     z-index:998;
 }
@@ -108,7 +108,8 @@ nav{
 }
 
 .logo img{
-    height:60px;
+    height:45px;
+    width:auto;
 }
 
 #menu-btn{
