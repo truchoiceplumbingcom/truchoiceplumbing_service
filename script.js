@@ -233,3 +233,32 @@ ${message}`;
         this.reset();
     });
 }
+
+// =============================
+// EMERGENCY BAR
+// =============================
+
+const emergencyBar = document.querySelector(".emergency-bar");
+
+function showEmergencyBar() {
+    emergencyBar.style.transition = "0.5s";
+    emergencyBar.style.transform = "translateY(0)";
+    emergencyBar.style.opacity = "1";
+
+    setTimeout(() => {
+        emergencyBar.style.transform = "translateY(-100%)";
+        emergencyBar.style.opacity = "0";
+    }, 5000);
+}
+
+// Show when page loads
+window.addEventListener("load", () => {
+    showEmergencyBar();
+});
+
+// Show again whenever the user scrolls back to the top
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 50 && emergencyBar.style.opacity === "0") {
+        showEmergencyBar();
+    }
+});
