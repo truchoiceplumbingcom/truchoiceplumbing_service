@@ -12,6 +12,17 @@ menuBtn.addEventListener("click",()=>{
 
 });
 
+// Close menu when clicking outside
+document.addEventListener("click", (e) => {
+    if (
+        mobileMenu.classList.contains("active") &&
+        !mobileMenu.contains(e.target) &&
+        !menuBtn.contains(e.target)
+    ) {
+        mobileMenu.classList.remove("active");
+    }
+});
+
 // Close menu after clicking a link
 
 document.querySelectorAll(".mobile-menu a").forEach(link=>{
