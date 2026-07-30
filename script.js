@@ -269,3 +269,15 @@ window.addEventListener("scroll", () => {
         showEmergencyBar();
     }
 });
+
+document.querySelectorAll(".video-card video").forEach(video => {
+
+    video.addEventListener("play", () => {
+        video.nextElementSibling.style.opacity = "0";
+    });
+
+    video.addEventListener("pause", () => {
+        video.nextElementSibling.style.opacity = "1";
+    });
+
+});
