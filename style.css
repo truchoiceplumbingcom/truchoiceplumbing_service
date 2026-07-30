@@ -947,3 +947,54 @@ box-shadow:0 10px 25px rgba(0,0,0,.2);
         transform:scale(1);
     }
         }
+
+/*==============================
+        PROJECT VIDEOS
+==============================*/
+
+#project-videos{
+    width:90%;
+    max-width:1200px;
+    margin:100px auto;
+}
+
+#project-videos .gallery-slider{
+    display:flex;
+    gap:22px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    padding:20px 5px;
+}
+
+#project-videos .gallery-slider::-webkit-scrollbar{
+    display:none;
+}
+
+#project-videos video{
+    flex:0 0 320px;
+    width:320px;
+    height:220px;
+    border-radius:18px;
+    object-fit:cover;
+    background:#000;
+    scroll-snap-align:center;
+    cursor:pointer;
+    transition:.3s ease;
+    box-shadow:0 12px 28px rgba(0,0,0,.15);
+}
+
+#project-videos video:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+@media(max-width:768px){
+
+#project-videos video{
+    flex:0 0 280px;
+    width:280px;
+    height:190px;
+}
+
+}
